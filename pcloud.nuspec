@@ -8,7 +8,7 @@
     <title>pCloud (Install)</title>
     <authors>pCloud International AG</authors>
     <projectUrl>https://www.pcloud.com/download-free-online-cloud-file-storage.html</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/netjunki/chocolatey-remarkable/04194b6481b461e227b7297385a4a6a7ad0a84d9/rm_icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/netjunki/chocolatey-pcloud/a4289e5f5e20094f1041f2f2a521e71e258d5fc2/pcloud_icon.png</iconUrl>
     <copyright>2023 pCloud International AG</copyright>
     <docsUrl>https://www.pcloud.com/help.html</docsUrl>
     <tags>pcloud backup storage</tags>
