@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pcloud</id>
+    <version>4.1.1</version>
+    <packageSourceUrl>https://github.com/netjunki/chocolatey-pcloud</packageSourceUrl>
+    <owners>netjunki</owners>
+    <title>pCloud (Install)</title>
+    <authors>pCloud International AG</authors>
+    <projectUrl>https://www.pcloud.com/download-free-online-cloud-file-storage.html</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/netjunki/chocolatey-remarkable/04194b6481b461e227b7297385a4a6a7ad0a84d9/rm_icon.png</iconUrl>
+    <copyright>2023 pCloud International AG</copyright>
+    <docsUrl>https://www.pcloud.com/help.html</docsUrl>
+    <tags>pcloud backup storage</tags>
+    <summary>Extend the available space on your PC</summary>
+    <description>Extend the available space on your PC. Use your files in the cloud as if they are saved locally, but without taking hard disk space</description>
+    <licenseUrl>https://www.pcloud.com/terms_and_conditions.html</licenseUrl>
+    <releaseNotes>https://www.pcloud.com/release-notes/windows.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
