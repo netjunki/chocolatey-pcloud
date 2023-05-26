@@ -1,11 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 function getPCloudInstallerUrl {
   param (
     $FileCode
   )
-  ((Invoke-webrequest -URI "https://u.pcloud.link/publink/show?code=$FileCode").Content | findstr "downloadlink").Split('"')[3].Replace('\/','/')
+  ((Invoke-WebRequest -UseBasicParsing -Uri "https://u.pcloud.link/publink/show?code=$FileCode").Content | findstr "downloadlink").Split('"')[3].Replace('\/','/')
 }
 
 $url        = getPCloudInstallerUrl -FileCode "XZar9wVZibWL4VKCgBHNCynCh1gVtfs8DFty" # 4.1.1 for x86
@@ -13,7 +12,6 @@ $url64      = getPCloudInstallerUrl -FileCode "XZ9r9wVZ5BKGcBkvjyYLcjD48mwMQY94T
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'exe'
   url           = $url
   url64bit      = $url64
